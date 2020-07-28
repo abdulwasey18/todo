@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Search Users App</title>
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk " crossorigin="anonymous ">
+</head>
+
+<body style="background-color: #e7e7e7;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">GitHub Profile Search</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <form class="form-inline my-2 my-lg-0" id="searchForm">
+                <input class="form-control mr-sm-2" type="search" name="profilename" placeholder="Search" aria-label="Search">
+
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <img src="./download.jpg" alt="Profile Image" id="profileimg" class="rounded-circle mx-auto d-block mt-5 border border-secondary">
+    <br>
+    <div class="text-center">
+        <h3 id="username"></h3>
+        <h6>Followers: <strong id="followers" class="text-secondary"></strong> Following: <strong id="following" class="text-secondary"></strong></h6>
+        <h6>Location: <strong id="location" class="text-secondary">  </strong> </h6>
+    </div>
+    <br>
+
+    <div class="container">
+        <div class="card bg-primary">
+            <h2 style="text-align: center;" class="text-white">Other Details</h2>
+        </div>
+        <br>
+        <div class="row z-depth-1">
+            <div class="col s4 left-align">
+                <p>Organization :
+                </p>
+            </div>
+            <div class="col s4 left-align">
+                <p id="org">
+                </p>
+            </div>
+        </div>
+        <div class="row z-depth-1">
+            <div class="col s4 left-align">
+                <p>Bio :
+                </p>
+            </div>
+            <div class="col s4 left-align">
+                <p id="bio">
+                </p>
+            </div>
+        </div>
+        <div class="row z-depth-1">
+            <div class="col s4 left-align">
+                <p>Repos :
+                </p>
+            </div>
+            <div class="col s4 left-align">
+                <p id="repos">
+                </p>
+            </div>
+        </div>
+        <div class="row z-depth-1">
+            <div class="col s4 left-align">
+                <p>Gists :
+                </p>
+            </div>
+            <div class="col s4 left-align">
+                <p id="gists">
+                </p>
+            </div>
+        </div>
+        <div class="row z-depth-1">
+            <div class="col s4 left-align">
+                <p>Blog :
+                </p>
+            </div>
+            <div class="col s4 left-align">
+                <p id="blog">
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
